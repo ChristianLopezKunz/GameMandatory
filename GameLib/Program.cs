@@ -1,9 +1,13 @@
 ﻿using GameMandatory;
+using GameMandatory.Models.World;
 using GameMandatory.Models;
+using GameMandatory.XMLFiles.LoadFiles;
+using GameMandatory.Models.Creatures;
 
-World world = new World(50, 50);
+XmlLoadFil.LoadWorld();
 
-//XmlSaveFil(world);
+Creature monster = new Monster("Kat", 200, 3, 1, new Position(10,10));
 
-//World loadedWorld = new XmlLoad(world);
-
+monster.ReceiveDamage(1);
+monster.ReceiveDamage(3);
+monster.ReceiveDamage(5);
