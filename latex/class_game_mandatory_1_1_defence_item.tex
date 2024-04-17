@@ -1,0 +1,68 @@
+\doxysection{Game\+Mandatory.\+Defence\+Item Class Reference}
+\hypertarget{class_game_mandatory_1_1_defence_item}{}\label{class_game_mandatory_1_1_defence_item}\index{GameMandatory.DefenceItem@{GameMandatory.DefenceItem}}
+Inheritance diagram for Game\+Mandatory.\+Defence\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_mandatory_1_1_defence_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_mandatory_1_1_defence_item_ade705eb2e93b354466fd7883f3e2c94d}\label{class_game_mandatory_1_1_defence_item_ade705eb2e93b354466fd7883f3e2c94d} 
+{\bfseries Defence\+Item} (string name, bool lootable, bool removeable, \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} position)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_mandatory_1_1_world_object}{Game\+Mandatory.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries World\+Object} (string name, bool lootable, bool removeable, \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} position)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_game_mandatory_1_1_defence_item}{Defence\+Item}} $>$ \mbox{\hyperlink{class_game_mandatory_1_1_defence_item_a27644ded58fcb5f706821ca1feb22e7f}{defence\+Items}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_mandatory_1_1_defence_item_a61fec8ec3e8508f677fae9b5667b7337}\label{class_game_mandatory_1_1_defence_item_a61fec8ec3e8508f677fae9b5667b7337} 
+int {\bfseries Reduce\+Hit\+Point}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_game_mandatory_1_1_world_object}{Game\+Mandatory.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_game_mandatory_1_1_world_object_ae2d8c5239a44b4a8b3bc6ba75e78b34f}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_game_mandatory_1_1_world_object_a8f52b8c5a08eea9a448c8f3cbf7d2d72}{Lootable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_game_mandatory_1_1_world_object_a7a54dc72a36bd540ac6749a9e4235ac9}{Removeable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} \mbox{\hyperlink{class_game_mandatory_1_1_world_object_a8c5499ba9c14f8128417c79b9600374c}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_game_mandatory_1_1_interfaces_1_1_i_world_object}{Game\+Mandatory.\+Interfaces.\+IWorld\+Object}}}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_game_mandatory_1_1_defence_item_a27644ded58fcb5f706821ca1feb22e7f}\label{class_game_mandatory_1_1_defence_item_a27644ded58fcb5f706821ca1feb22e7f} 
+\index{GameMandatory.DefenceItem@{GameMandatory.DefenceItem}!defenceItems@{defenceItems}}
+\index{defenceItems@{defenceItems}!GameMandatory.DefenceItem@{GameMandatory.DefenceItem}}
+\doxysubsubsection{\texorpdfstring{defenceItems}{defenceItems}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_game_mandatory_1_1_defence_item}{Defence\+Item}}$>$ Game\+Mandatory.\+Defence\+Item.\+defence\+Items\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ List<DefenceItem>()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ DefenceItem(\textcolor{stringliteral}{"{}Helm"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ Position(0,\ 0))\ \{\ ReduceHitPoint\ =\ 2\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_game_mandatory_1_1_defence_item}{DefenceItem}}(\textcolor{stringliteral}{"{}Chestplate"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}}(1,\ 1))\ \{\ ReduceHitPoint\ =\ 5\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_game_mandatory_1_1_defence_item}{DefenceItem}}(\textcolor{stringliteral}{"{}Armorlegs"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ Position(2,\ 2))\ \{\ ReduceHitPoint\ =\ 3\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ DefenceItem(\textcolor{stringliteral}{"{}Shield"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ Position(3,\ 3))\ \{\ ReduceHitPoint\ =\ 3\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ DefenceItem(\textcolor{stringliteral}{"{}Boots"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ Position(4,\ 4))\ \{\ ReduceHitPoint\ =\ 1\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chr\+\_\+k/\+Desktop/\+Opgaver/\+Valgfag c\#/\+Mandatory assignment/\+Game\+Mandatory/\+Game\+Mandatory/\+Models/\+Amoury/Defence\+Item.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\doxysection{Game\+Mandatory.\+Models.\+Creatures.\+Monster Class Reference}
+\hypertarget{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster}{}\label{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster}\index{GameMandatory.Models.Creatures.Monster@{GameMandatory.Models.Creatures.Monster}}
+Inheritance diagram for Game\+Mandatory.\+Models.\+Creatures.\+Monster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster_a9e6384525c295e81d41c25c869367aab}\label{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster_a9e6384525c295e81d41c25c869367aab} 
+{\bfseries Monster} (string name, int hit\+Points, int attack, int defence, \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} position)
+\item 
+override void \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster_af45883215e644e31238edfa9e865a1b6}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Logger at person er dø og ændre dead til true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature}{Game\+Mandatory.\+Models.\+Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Creature} (string name, int hit\+Points, int attack, int defence, \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} position)
+\item 
+virtual void \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_a52c1b6d3ce8dd5e782c8762641f6dde6}{Damage}} (\mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature}{Creature}} enemy)
+\begin{DoxyCompactList}\small\item\em Finder ud af hvor meget en modstander skal have i skade og logger angrebet Metoden tjekker også om person har et våben inden den giver skade. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_adfffa69d444888c4dcc8d2ad029c8e8f}{Receive\+Damage}} (int dmg)
+\begin{DoxyCompactList}\small\item\em Finder ud af hvor meget en modstander reducere skaden og logger mængden Metoden tjekker også om person har armor på inden skaden er givet Den tjekker tilsidst om person dør. \end{DoxyCompactList}\item 
+virtual void {\bfseries Loot} (\mbox{\hyperlink{class_game_mandatory_1_1_world_object}{World\+Object}} item)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature}{Game\+Mandatory.\+Models.\+Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_a9194f435ec994493e6070d2b80126157}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_a39fe0d5ae47bb05cbf0aced724bb710d}{Hit\+Points}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int {\bfseries Current\+Hit\+Points}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_afc15acd0d32b68a17f5fd4bbf7591b93}{Attack}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_ada448833a2a63bdb2c8c8b25bdb5f641}{Defence}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_aec399e421b8beebd3ca689c1bf7dfcc9}{Dead}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} {\bfseries position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_attack_item}{Attack\+Item}} $>$? {\bfseries Attack\+Item}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_game_mandatory_1_1_defence_item}{Defence\+Item}} $>$? {\bfseries Defence\+Item}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster_af45883215e644e31238edfa9e865a1b6}\label{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster_af45883215e644e31238edfa9e865a1b6} 
+\index{GameMandatory.Models.Creatures.Monster@{GameMandatory.Models.Creatures.Monster}!Die@{Die}}
+\index{Die@{Die}!GameMandatory.Models.Creatures.Monster@{GameMandatory.Models.Creatures.Monster}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily override void Game\+Mandatory.\+Models.\+Creatures.\+Monster.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Logger at person er dø og ændre dead til true. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_a02be04a8241695dd54be89a48284d4ac}{Game\+Mandatory.\+Models.\+Creature}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chr\+\_\+k/\+Desktop/\+Opgaver/\+Valgfag c\#/\+Mandatory assignment/\+Game\+Mandatory/\+Game\+Mandatory/\+Models/\+Creatures/Monster.\+cs\end{DoxyCompactItemize}

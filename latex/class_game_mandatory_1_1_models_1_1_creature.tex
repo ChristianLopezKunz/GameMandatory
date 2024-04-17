@@ -1,0 +1,174 @@
+\doxysection{Game\+Mandatory.\+Models.\+Creature Class Reference}
+\hypertarget{class_game_mandatory_1_1_models_1_1_creature}{}\label{class_game_mandatory_1_1_models_1_1_creature}\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+
+
+Creature klassen kan ikke direkte instantieres, men kan blive brugt som en skabelon til andre subklasser Metoder\+: Damage(),Receive\+Damage() og Die()  
+
+
+Inheritance diagram for Game\+Mandatory.\+Models.\+Creature\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_mandatory_1_1_models_1_1_creature}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_ab49be60238b4af131408169d568be776}\label{class_game_mandatory_1_1_models_1_1_creature_ab49be60238b4af131408169d568be776} 
+{\bfseries Creature} (string name, int hit\+Points, int attack, int defence, \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} position)
+\item 
+virtual void \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_a52c1b6d3ce8dd5e782c8762641f6dde6}{Damage}} (\mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature}{Creature}} enemy)
+\begin{DoxyCompactList}\small\item\em Finder ud af hvor meget en modstander skal have i skade og logger angrebet Metoden tjekker også om person har et våben inden den giver skade. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_adfffa69d444888c4dcc8d2ad029c8e8f}{Receive\+Damage}} (int dmg)
+\begin{DoxyCompactList}\small\item\em Finder ud af hvor meget en modstander reducere skaden og logger mængden Metoden tjekker også om person har armor på inden skaden er givet Den tjekker tilsidst om person dør. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_a02be04a8241695dd54be89a48284d4ac}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Logger at person er dø og ændre dead til true. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_aa8f26b829bd4a6f83e07cdd4c93d298b}\label{class_game_mandatory_1_1_models_1_1_creature_aa8f26b829bd4a6f83e07cdd4c93d298b} 
+virtual void {\bfseries Loot} (\mbox{\hyperlink{class_game_mandatory_1_1_world_object}{World\+Object}} item)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_a9194f435ec994493e6070d2b80126157}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_a39fe0d5ae47bb05cbf0aced724bb710d}{Hit\+Points}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_aee6641e9a1fefba2bf635ad88b45741a}\label{class_game_mandatory_1_1_models_1_1_creature_aee6641e9a1fefba2bf635ad88b45741a} 
+int {\bfseries Current\+Hit\+Points}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_afc15acd0d32b68a17f5fd4bbf7591b93}{Attack}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_ada448833a2a63bdb2c8c8b25bdb5f641}{Defence}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature_aec399e421b8beebd3ca689c1bf7dfcc9}{Dead}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_a83c0a0aa607f2e0ddf05f20397726b06}\label{class_game_mandatory_1_1_models_1_1_creature_a83c0a0aa607f2e0ddf05f20397726b06} 
+\mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} {\bfseries position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_a348a019b18107daadf7a39d9d6f4f1fa}\label{class_game_mandatory_1_1_models_1_1_creature_a348a019b18107daadf7a39d9d6f4f1fa} 
+List$<$ \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_attack_item}{Attack\+Item}} $>$? {\bfseries Attack\+Item}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_a22f1c63ae6ec3c489ab35e082b1ed8b1}\label{class_game_mandatory_1_1_models_1_1_creature_a22f1c63ae6ec3c489ab35e082b1ed8b1} 
+List$<$ \mbox{\hyperlink{class_game_mandatory_1_1_defence_item}{Defence\+Item}} $>$? {\bfseries Defence\+Item}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}}
+
+
+\doxysubsection{Detailed Description}
+Creature klassen kan ikke direkte instantieres, men kan blive brugt som en skabelon til andre subklasser Metoder\+: Damage(),Receive\+Damage() og Die() 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_a52c1b6d3ce8dd5e782c8762641f6dde6}\label{class_game_mandatory_1_1_models_1_1_creature_a52c1b6d3ce8dd5e782c8762641f6dde6} 
+\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}!Damage@{Damage}}
+\index{Damage@{Damage}!GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+\doxysubsubsection{\texorpdfstring{Damage()}{Damage()}}
+{\footnotesize\ttfamily virtual void Game\+Mandatory.\+Models.\+Creature.\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creature}{Creature}}}]{enemy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Finder ud af hvor meget en modstander skal have i skade og logger angrebet Metoden tjekker også om person har et våben inden den giver skade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}.
+
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_a02be04a8241695dd54be89a48284d4ac}\label{class_game_mandatory_1_1_models_1_1_creature_a02be04a8241695dd54be89a48284d4ac} 
+\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}!Die@{Die}}
+\index{Die@{Die}!GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily virtual void Game\+Mandatory.\+Models.\+Creature.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Logger at person er dø og ændre dead til true. 
+
+
+
+Implements \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_creatures_1_1_monster_af45883215e644e31238edfa9e865a1b6}{Game\+Mandatory.\+Models.\+Creatures.\+Monster}}.
+
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_adfffa69d444888c4dcc8d2ad029c8e8f}\label{class_game_mandatory_1_1_models_1_1_creature_adfffa69d444888c4dcc8d2ad029c8e8f} 
+\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}!ReceiveDamage@{ReceiveDamage}}
+\index{ReceiveDamage@{ReceiveDamage}!GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+\doxysubsubsection{\texorpdfstring{ReceiveDamage()}{ReceiveDamage()}}
+{\footnotesize\ttfamily virtual void Game\+Mandatory.\+Models.\+Creature.\+Receive\+Damage (\begin{DoxyParamCaption}\item[{int}]{dmg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Finder ud af hvor meget en modstander reducere skaden og logger mængden Metoden tjekker også om person har armor på inden skaden er givet Den tjekker tilsidst om person dør. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dmg} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_afc15acd0d32b68a17f5fd4bbf7591b93}\label{class_game_mandatory_1_1_models_1_1_creature_afc15acd0d32b68a17f5fd4bbf7591b93} 
+\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}!Attack@{Attack}}
+\index{Attack@{Attack}!GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+\doxysubsubsection{\texorpdfstring{Attack}{Attack}}
+{\footnotesize\ttfamily int Game\+Mandatory.\+Models.\+Creature.\+Attack\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}.
+
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_aec399e421b8beebd3ca689c1bf7dfcc9}\label{class_game_mandatory_1_1_models_1_1_creature_aec399e421b8beebd3ca689c1bf7dfcc9} 
+\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}!Dead@{Dead}}
+\index{Dead@{Dead}!GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+\doxysubsubsection{\texorpdfstring{Dead}{Dead}}
+{\footnotesize\ttfamily bool Game\+Mandatory.\+Models.\+Creature.\+Dead = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}.
+
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_ada448833a2a63bdb2c8c8b25bdb5f641}\label{class_game_mandatory_1_1_models_1_1_creature_ada448833a2a63bdb2c8c8b25bdb5f641} 
+\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}!Defence@{Defence}}
+\index{Defence@{Defence}!GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+\doxysubsubsection{\texorpdfstring{Defence}{Defence}}
+{\footnotesize\ttfamily int Game\+Mandatory.\+Models.\+Creature.\+Defence\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}.
+
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_a39fe0d5ae47bb05cbf0aced724bb710d}\label{class_game_mandatory_1_1_models_1_1_creature_a39fe0d5ae47bb05cbf0aced724bb710d} 
+\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}!HitPoints@{HitPoints}}
+\index{HitPoints@{HitPoints}!GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+\doxysubsubsection{\texorpdfstring{HitPoints}{HitPoints}}
+{\footnotesize\ttfamily int Game\+Mandatory.\+Models.\+Creature.\+Hit\+Points\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}.
+
+\Hypertarget{class_game_mandatory_1_1_models_1_1_creature_a9194f435ec994493e6070d2b80126157}\label{class_game_mandatory_1_1_models_1_1_creature_a9194f435ec994493e6070d2b80126157} 
+\index{GameMandatory.Models.Creature@{GameMandatory.Models.Creature}!Name@{Name}}
+\index{Name@{Name}!GameMandatory.Models.Creature@{GameMandatory.Models.Creature}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Game\+Mandatory.\+Models.\+Creature.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_game_mandatory_1_1_models_1_1_i_creature}{Game\+Mandatory.\+Models.\+ICreature}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chr\+\_\+k/\+Desktop/\+Opgaver/\+Valgfag c\#/\+Mandatory assignment/\+Game\+Mandatory/\+Game\+Mandatory/\+Models/\+Creatures/Creature.\+cs\end{DoxyCompactItemize}

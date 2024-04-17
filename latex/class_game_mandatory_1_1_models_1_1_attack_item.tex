@@ -1,0 +1,70 @@
+\doxysection{Game\+Mandatory.\+Models.\+Attack\+Item Class Reference}
+\hypertarget{class_game_mandatory_1_1_models_1_1_attack_item}{}\label{class_game_mandatory_1_1_models_1_1_attack_item}\index{GameMandatory.Models.AttackItem@{GameMandatory.Models.AttackItem}}
+Inheritance diagram for Game\+Mandatory.\+Models.\+Attack\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_mandatory_1_1_models_1_1_attack_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_attack_item_ae2b4b8fa5eaacff2db653e2e40a341d4}\label{class_game_mandatory_1_1_models_1_1_attack_item_ae2b4b8fa5eaacff2db653e2e40a341d4} 
+{\bfseries Attack\+Item} (string name, bool lootable, bool removeable, \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} position)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_mandatory_1_1_world_object}{Game\+Mandatory.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries World\+Object} (string name, bool lootable, bool removeable, \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} position)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_attack_item}{Attack\+Item}} $>$ \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_attack_item_a25be9ceddb99045265f727d6db958e9c}{attack\+Items}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_attack_item_a01caf621a8b38be5f8acbb7864837332}\label{class_game_mandatory_1_1_models_1_1_attack_item_a01caf621a8b38be5f8acbb7864837332} 
+int {\bfseries Range}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_game_mandatory_1_1_models_1_1_attack_item_afe001c653dc611e55fa932e387f50a07}\label{class_game_mandatory_1_1_models_1_1_attack_item_afe001c653dc611e55fa932e387f50a07} 
+int {\bfseries Damage}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_game_mandatory_1_1_world_object}{Game\+Mandatory.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_game_mandatory_1_1_world_object_ae2d8c5239a44b4a8b3bc6ba75e78b34f}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_game_mandatory_1_1_world_object_a8f52b8c5a08eea9a448c8f3cbf7d2d72}{Lootable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_game_mandatory_1_1_world_object_a7a54dc72a36bd540ac6749a9e4235ac9}{Removeable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}} \mbox{\hyperlink{class_game_mandatory_1_1_world_object_a8c5499ba9c14f8128417c79b9600374c}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_game_mandatory_1_1_interfaces_1_1_i_world_object}{Game\+Mandatory.\+Interfaces.\+IWorld\+Object}}}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_game_mandatory_1_1_models_1_1_attack_item_a25be9ceddb99045265f727d6db958e9c}\label{class_game_mandatory_1_1_models_1_1_attack_item_a25be9ceddb99045265f727d6db958e9c} 
+\index{GameMandatory.Models.AttackItem@{GameMandatory.Models.AttackItem}!attackItems@{attackItems}}
+\index{attackItems@{attackItems}!GameMandatory.Models.AttackItem@{GameMandatory.Models.AttackItem}}
+\doxysubsubsection{\texorpdfstring{attackItems}{attackItems}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_attack_item}{Attack\+Item}}$>$ Game\+Mandatory.\+Models.\+Attack\+Item.\+attack\+Items\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ List<AttackItem>()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ AttackItem(\textcolor{stringliteral}{"{}Dagger"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ Position(0,\ 0))\ \{\ Range\ =\ 1,\ Damage\ =\ 2\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_attack_item}{AttackItem}}(\textcolor{stringliteral}{"{}Sword"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_world_1_1_position}{Position}}(0,\ 0))\ \{\ Range\ =\ 1,\ Damage\ =\ 4\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_game_mandatory_1_1_models_1_1_attack_item}{AttackItem}}(\textcolor{stringliteral}{"{}Bow"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ Position(0,\ 0))\ \{\ Range\ =\ 3,\ Damage\ =\ 3\ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ AttackItem(\textcolor{stringliteral}{"{}Staff"{}},\ \textcolor{keyword}{true},\ \textcolor{keyword}{false},\ \textcolor{keyword}{new}\ Position(0,\ 0))\ \{\ Range\ =\ 2,\ Damage\ =\ 3\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chr\+\_\+k/\+Desktop/\+Opgaver/\+Valgfag c\#/\+Mandatory assignment/\+Game\+Mandatory/\+Game\+Mandatory/\+Models/\+Amoury/Attack\+Item.\+cs\end{DoxyCompactItemize}
